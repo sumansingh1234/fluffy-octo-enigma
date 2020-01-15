@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -101,7 +100,18 @@ public class Keyword {
 			}
 		}
 		
-		
+		for(int i=0;i<a.size();i++) {
+			if(a.get(i).equals("clickoncontact")) {
+				String Keyword = (String)a.get(i);
+				String deta =(String)a.get(i+1);
+				String objectname =(String)a.get(i+2);
+				String runmode =(String)a.get(i+3);
+				System.out.println(Keyword);
+				System.out.println(deta);
+				System.out.println(objectname);
+				System.out.println( runmode);
+			}
+		}
 		
 		
 }
